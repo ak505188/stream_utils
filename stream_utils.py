@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import json
 import urllib2
 import sys
@@ -26,12 +28,11 @@ def search(search_str):
       print (data['items'][index]['snippet']['channelTitle'])
       print (data['items'][index]['snippet']['publishedAt'])
       print "www.youtube.com/watch/" + (data['items'][index]['id']['videoId']) + "\n"
-  return 1;
+
 
 search(sys.argv[1])
 # for x in range(1, len(sys.argv)):
 #   search = search + sys.argv[x]
 #   if x is not (len(sys.argv)):
 #    search = search + "+"
-
 

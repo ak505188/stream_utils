@@ -1,9 +1,10 @@
 import json
 import urllib2
 import sys
+import os
 
 print str(sys.argv)
-key = 'AIzaSyBuXpZ6CN2-WkXnorwt1BC-67vjEFaUOGg'
+key = os.environ['YOUTUBE_API']
 
 search = ""
 if len(sys.argv) > 1:
